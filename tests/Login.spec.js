@@ -3,10 +3,11 @@ const { poManager } = require('./pageObjects/poManager');
 
 test(`@web Verify eventHub valid login`, async ({ page }) => // browser is a builtin playwright fixtures  
 {
-    const pages = new poManager(page);
+
     //   uname= "amrutharaghavan@abc.com"
-        //   uname= "amrutharaghavan@abc1.com"
+    //   uname= "amrutharaghavan@abc1.com"
     //  password="Hell0@W0rld"
+    const pages = new poManager(page);
     const lPage = await pages.createLogin();
     await lPage.tryLogin("amrutharaghavan@abc.com", "Hell0@W0rld");
     await expect(page.locator('#user-email-display')).toHaveText('amrutharaghavan@abc.com');

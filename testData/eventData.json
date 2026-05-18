@@ -1,0 +1,13 @@
+{
+    "Event": {
+        "title": "SunDown Event",
+        "description": "SunDown Event-Description",
+        "category": "Conference",
+        "city": "Test City",
+        "venue": "Test Venue",
+        "dateTime": "2026-05-25T05:30",
+        "price": 100,
+        "seats": 100,
+        "imgUrl": "https://tinylovebug.com/wp-content/uploads/2019/05/party-ideas.jpg"
+    }
+}
